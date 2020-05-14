@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1395a25f53.js" crossorigin="anonymous"></script>
+    <title>Home | Carex Cars</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading red">
+            carex
+        </h1> 
+        <nav class="nav-bar">
+            <div class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+
+            <ul class="link-container">
+                <li class="nav-link red"><a href="#home" class="link">home</a></li>
+                <li class="nav-link"> <a href="#about" class="link">about</a></li>
+                <li class="nav-link"><a href="#cars" class="link">cars</a></li>
+                <li class="nav-link"><a href="#services" class="link">services</a></li>
+                <li class="nav-link"><a href="#contacts" class="link">contacts</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <div class="banner" id="home">
+        <div class="banner-image">
+            <img src="img/lovely-black-car-wallpaper-with-black-background.jpg">
+        </div>
+        <div class="text">
+            <p class="welcome-text">welcome to carex</p>
+            <div class="messages">
+                <p class="message">book a car today!</p>
+                <p class="message"> save up to 30%</p>
+            </div>
+
+            <div class="findacar"><div class="progress"></div>find a car</div>
+        </div>
+
+        <div class="icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about__text">
+            <h2 class="about__heading">about</h2>
+            <h3 class="about__sub-heading">number 1 provider of the cripping driving experiences</h3>
+            <p class="about__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et rem, earum quas sapiente harum dignissimos cupiditate, nisi natus nam veniam mollitia nesciunt in itaque! Voluptatum corrupti voluptatem sed earum!
+            </p>
+        </div>
+        <div class="about__image">
+            <img src="img/campbell-boulanger-3ZUsNJhi_Ik-unsplash.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="cars" id="cars">
+        <div class="cars-container">
+                <h2 class="cars__heading">let's find your perfect car</h2>
+
+            <form class="car-search">
+                <div class="type-input">
+                    <select name="type">
+                        <option value="" selected>Car Type</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Lexus">Lexus</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Jeep">Jeep</option>
+                        <option value="Aston-martin">Aston Martin</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="ford">Ford</option>
+                        <option value="honda">Honda</option>
+                    </select>
+                </div>
+
+
+                <div class="location-input">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <select name="location">
+                        <option value="" selected>Location</option>
+                        <option value="lagos-mainland"> Lagos-mainland</option>
+                        <option value="lagos-island"> Lagos-island</option>
+                        <option value="ibadan"> Ibadan</option>
+                        <option value="abuja"> Abuja</option>
+                        <option value="akure"> Akure</option>
+                        <option value="ph"> Port harcourt</option>
+                    </select>
+                </div>
+
+                <div class="date-input">
+                    <span class="far fa-calendar-alt"></span>
+                    <input onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date" name="date" id="date">
+                </div>
+                
+                <div class="submit-btn">
+                    <input type="submit" value="search now!">
+                </div>
+            </form>
+
+        <div class="cars__grid">
+            <div class="grid-item">
+                <div class="grid-photo">
+                    <img src="img/audi.jpg">
+                </div>
+                <div class="car-info">
+                    <p class="name">AUDI A3</p>
+                    <p class="price"><span class="price">$35.00</span> per day</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-photo">
+                    <img src="img/download.jpg">
+                </div>
+                <div class="car-info">
+                    <p class="name">BMW 640d</p>
+                    <p class="price"><span class="price">$30.00</span> per day</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-photo">
+                    <img src="img/lexus.jpg">
+                </div>
+                <div class="car-info">
+                    <p class="name">LEXUS LFA</p>
+                    <p class="price"><span class="price">$28.00</span> per day</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-photo">
+                    <img src="img/jeep.jpg">
+                </div>
+                <div class="car-info">
+                    <p class="name">JEEP</p>
+                    <p class="price"><span class="price">$25.00</span> per day</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-photo">
+                    <img src="img/aston.jpg">
+                </div>
+                <div class="car-info">
+                    <p class="name">ASTON MARTIN dbs</p>
+                    <p class="price"><span class="price">$32.00</span> per day</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-photo">
+                    <img src="img/ferrari.jpg">
+                </div>
+                <div class="car-info">
+                    <p class="name">FERRARI 488</p>
+                    <p class="price"><span class="price">$35.00</span> per day</p>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
