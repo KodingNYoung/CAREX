@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="fontawesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1395a25f53.js" crossorigin="anonymous"></script>
     <title>Home | Carex Cars</title>
 </head>
@@ -25,7 +26,7 @@
                 <li class="nav-link red"><a href="#home" class="link">home</a></li>
                 <li class="nav-link"> <a href="#about" class="link">about</a></li>
                 <li class="nav-link"><a href="#cars" class="link">cars</a></li>
-                <li class="nav-link"><a href="#services" class="link">services</a></li>
+                <li class="nav-link"><a href="#service" class="link">services</a></li>
                 <li class="nav-link"><a href="#contacts" class="link">contacts</a></li>
             </ul> 
         </nav>
@@ -66,12 +67,12 @@
 
     <div class="cars" id="cars">
         <div class="cars-container">
-                <h2 class="cars__heading">let's find your perfect car</h2>
+            <h2 class="cars__heading">let's find your perfect car</h2>
 
             <form class="car-search">
                 <div class="type-input">
                     <select name="type">
-                        <option value="" selected>Car Type</option>
+                        <option selected>Car Type</option>
                         <option value="Audi">Audi</option>
                         <option value="BMW">BMW</option>
                         <option value="Lexus">Lexus</option>
@@ -88,7 +89,7 @@
                 <div class="location-input">
                     <span class="fas fa-map-marker-alt"></span>
                     <select name="location">
-                        <option value="" selected>Location</option>
+                        <option selected>Location</option>
                         <option value="lagos-mainland"> Lagos-mainland</option>
                         <option value="lagos-island"> Lagos-island</option>
                         <option value="ibadan"> Ibadan</option>
@@ -171,8 +172,72 @@
         </div> 
         </div>
     </div>
+    
+    <div class="service" id="service">
+        <div class="service-img">
+            <img src="img/whatweoffer.jpg">
+            <div>What we offer!</div>
+        </div>
+        <div class="services-div">
+            <div class="service-text">
+                <h2 class="services-heading">1</h2>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis cumque iure numquam, quam quibusdam sunt officia. Est in tempora voluptatibus nobis. Similique inventore, sed pariatur consequatur quasi magni perferendis!</span>
+            </div>
+            <div class="service-text">
+                <h2 class="services-heading">2</h2>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis cumque iure numquam, quam quibusdam sunt officia. Est in tempora voluptatibus nobis. Similique inventore, sed pariatur consequatur quasi magni perferendis!</span>
+            </div>
+            <div class="service-text">
+                <h2 class="services-heading">3</h2>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis cumque iure numquam, quam quibusdam sunt officia. Est in tempora voluptatibus nobis. Similique inventore, sed pariatur consequatur quasi magni perferendis!</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contacts" id="contacts">
+            <div class="address">
+                
+                <div class="contact-heading"> Branches</div>
+                
+                <ul class="details">
+                    <li>
+                        <p class="company">Dealers on wheel.</p>
+                        <p class="street">1, Katampe Rd,</p>
+                        <p class="town">Kado,</p>
+                        <p class="state">Abuja.</p>
+                    </li>
+                    <li>
+                        <p class="company">Kia motors.</p>
+                        <p class="street">308, Adeola odeku str.,</p>
+                        <p class="town">Victoria island,</p>
+                        <p class="state">Lagos.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-media">
+                
+                <div class="contact-heading">Connect</div>
 
+                <div class="social-icons details">
+                    <i class="fab fa-facebook-f"> <a href="#">Facebook &rarr;</a></i>
+                    <i class="fab fa-twitter"> <a href="#">Twitter &rarr;</a></i>
+                    <i class="fab fa-whatsapp"> <a href="#">Whatsapp &rarr;</a></i>
+                    <i class="fab fa-instagram"> <a href="#">Instagram &rarr;</a></i>
+                </div>
+            </div>
+            <div class="hotline">
+                
+                <div class="contact-heading">Contact</div>
+                <div class="details">
+                    <i class="far fa-envelope"> <a href="mailto:" class="phone">support@carex.org</a></i>
+                    <i class="fas fa-phone-alt"> <a href="tel:+2348012345678" class="phone">+2348012345678</a></i>   
+                </div>
+            </div>
+        </div>
 
+  
+       <span> copyright &copy 2020. Carex car rental services.</span>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

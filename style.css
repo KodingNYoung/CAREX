@@ -9,7 +9,6 @@
 body{
     background-color: black;
     color: white;
-    margin-bottom: 100px;
 }
 header{
     margin:5px 15px;
@@ -105,6 +104,15 @@ header{
     }
     .nav-link{
         margin: auto 0;
+        transition: padding 1s ;
+        /* background-color: red;
+        width: 100%; */
+    }
+    .nav-link:hover{
+        padding-left: 20px;
+    }
+    .nav-link:visited {
+        color: rgb(209, 22, 22);
     }
     .nav-link-show{
         transform:translateX(0%);
@@ -276,11 +284,12 @@ form.car-search{
     color: #ccc;
    
 }
-.car-search input, .car-search select{
+.car-search input, .car-search select, #date{
     width: 100%;
     border: 0;
     padding: 5px;
-    color: #ccc;
+    color: black;
+    font-size: 16px;
     outline: none;
     cursor: pointer;
 }
@@ -297,6 +306,8 @@ form.car-search{
     border-radius: 3px;
     padding: 7px;
     box-shadow: 2px 2px 4px rgb(141, 140, 140);
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 .cars__grid{
     margin:20px 0;
@@ -308,10 +319,13 @@ form.car-search{
 }
 .grid-item{
     margin: 10px;
+    /* border: 1px solid #ccc; */
 }
 .grid-item img{
-    width:250px;
-    height: 210px;
+    width:25vw;
+    min-width: 200px;
+    height: 400px;
+    /* object-fit: cover; */
 }
 .car-info {
     font-family: 'Roboto', sans-serif;
@@ -330,4 +344,98 @@ p.price{
     .car-search div{
         margin: 10px auto;
     }
-} 
+}
+.service{
+    font-family: sans-serif;
+    padding: 0 20px 20px 20px ;
+    background-color: #ccc;
+}
+.service-img {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 30vh;
+    max-height: 370px;
+    max-width: 670px;
+}
+.service-img img{
+    opacity: 1;
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto;
+}
+.service-img div{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    font-size: 50px;
+}
+.services-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.service-text{
+    width:300px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+/* contacts */
+.contacts{
+    background: linear-gradient(to bottom right, rgb(0,0,0), rgb(41, 40, 40));
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.contacts>div{
+    width: 200px;
+    margin: 20px;
+    font-size: 20px;
+}
+.contacts .contact-heading{
+    padding: 10px 0;
+    font-size: 25px;
+    
+}
+.details{
+    font-size: 15px;
+    color: #ccc;
+}
+.details i{
+    margin-bottom: 17px;
+    display: block;
+}
+.details i > a{
+    font-family: 'Nunito', sans-serif;
+    color: #ccc;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1.3px dashed #ccc;
+}
+.details i > a:hover{
+    color:rgb(209, 22, 22);
+}
+.phone{
+    font-family: sans-serif;
+}
+footer span{
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
