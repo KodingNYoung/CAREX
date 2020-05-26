@@ -38,9 +38,13 @@ header{
     text-transform: uppercase;
     font-weight: bolder;
 }
+.link:hover{
+    color:rgb(209, 22, 22);
+}
 .link{
     text-decoration: none;
     color: white;
+    transition: color 0.3s linear;
 }
 .burger{
     display: none;
@@ -111,9 +115,6 @@ header{
     .nav-link:hover{
         padding-left: 20px;
     }
-    .nav-link:visited {
-        color: rgb(209, 22, 22);
-    }
     .nav-link-show{
         transform:translateX(0%);
     }
@@ -171,19 +172,25 @@ header{
     position: relative;
     margin-top: 20%;
     background-color: rgb(61, 60, 60);
-    width: 120px;
+    width: 17vw;
     height: 4vh;
     font-size: 11px;
     text-align: center;
-    line-height: 4vh;
     font-weight: bolder;
     letter-spacing: 1.5px;
+    line-height: 4vh;
+    z-index: 1;
+    /* border: 1px solid blue; */
 }
 .progress{
-    background-color: rgb(209, 22, 22);
+    background-color: rgba(255, 0, 0, 0.767);
     width: 7%;
     height: 100%;
     position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    transition: width 0.5s linear;
 }
 .icons{
     display: flex;
@@ -210,7 +217,7 @@ header{
 }
 .about__text{
     padding: 40px;
-    height: 70%;
+    height: fit-content;
     background-color: white;
     color: black;
     margin: auto 0;
@@ -229,7 +236,7 @@ header{
 .about__body{
     font-size: 15px;
     font-weight: bolder;
-    text-align: justify;
+    text-align: justif;
 }
 .about__image{
     height:100%;
@@ -239,6 +246,11 @@ header{
     width: 100%;
     object-fit: cover;
 }
+@media screen and (max-width: 630px){
+    .about__body{
+        font-size: 12px;
+    }
+}
 @media screen and (max-width: 462px){
     .about{
         grid-template-columns:1fr;
@@ -247,7 +259,11 @@ header{
     .about__text{
         height: fit-content;
     }
+    .about__body{
+        font-size: 12px;
+    }
 }
+
 .cars{
     border: 1px solid rgb(112, 112, 112);
     width: 100%;
@@ -385,12 +401,41 @@ p.price{
     align-items: center;
 }
 .service-text{
-    width:300px;
+    width:210px;
+    height: 200px;
     background-color: whitesmoke;
     color: black;
-    padding: 10px;
     border-radius: 5px;
     margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.service-text h2{
+    align-self: start;
+    color: rgb(209, 22, 22);;
+}
+.service-text span{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.service-text ul {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.service-text ul li {
+    /* border: 1px solid; */
+    /* width: fit-content; */
+    margin-left: 40px;
+    font-size: 17px;
 }
 /* contacts */
 .contacts{
